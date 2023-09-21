@@ -36,6 +36,15 @@ app.get('/pokemons', (req, res) => {
   res.json(pokemons);
 })
 
+app.post('/series', (req, res) => {
+  const series = [
+    'The witcher',
+    'Fleabag',
+    'The bear'
+  ];
+  res.json(series);
+});
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
